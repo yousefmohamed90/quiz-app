@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Tahoma,Arial;
+    height: 100vh;
+    /* background-color:  #ffffff; */
+    background: linear-gradient(135deg, #0e2136, #1b3552);
+}
+.quiz-app{
+margin: 40px auto;
+max-width: 900px;
+width: 100%;
+background-color: #142d4a;
+padding: 25px;
+box-shadow: 0 0 30px rgba(0, 195, 255, 0.15);
+}
+.quiz-app .quiz-info{
+display: flex;
+background-color: #142d4a;
+color: white;
+padding: 20px;
+}
+.quiz-app .quiz-info .category{flex: 1;
+font-weight: bold;}
+.quiz-app .quiz-info .count{
+flex: 1;
+text-align: right;
+font-weight: bold;
+}
+.quiz-app .quiz-area{
+background-color: linear-gradient(135deg, #00c3ff, #6300c6);
+    color: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 15px;
+    box-shadow: 0 0 20px rgba(0, 195, 255, 0.3);
+}
+.quiz-app .quiz-area .h2{
+    margin: 0;
+
+}
+.quiz-app .answers-area{
+padding: 20px 20px  5px;
+
+}
+
+.quiz-app .answers-area .answer {
+    background-color: #0e2136;
+    padding: 15px ;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: white;
+    transition: 0.3s ease;
+}
+.quiz-app .answers-area .answer:hover {
+    background-color: #1c3a5f;
+}
+
+.quiz-app .answers-area .answer:not(:last-child){
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.quiz-app .answers-area .answer input[type="radio"]:checked + label{
+color: #00c3ff;
+}
+.quiz-app .answers-area .answer label{
+    cursor: pointer;
+    font-weight: bold;
+    
+    font-size: 20px;
+    margin-left: 5px;
+}
+.quiz-app .submit{
+   background: linear-gradient(135deg, #00c3ff, #6300c6);
+    display: block;
+    width: 30%;
+    padding: 15px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius:8px ;
+    margin: 20px auto;
+    transition: 0.3s ease;
+}
+.quiz-app .submit:hover{
+     transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 195, 255, 0.4);
+}
+.quiz-app .bullets{
+    border: 1px solid #dfdfdf;
+  background-color: #142d4a;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
+.quiz-app .bullets .spans{
+flex: 1;
+display: flex;
+width: 100%;
+}
+.quiz-app .bullets .spans span{
+   width: 20px;
+    height: 20px;
+    background-color: #1c3a5f;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.quiz-app .bullets .spans span.on{
+    background-color: #00c3ff;
+    box-shadow: 0 0 10px #00c3ff;
+}
+.quiz-app .countdown{
+    margin-left: 15px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+   
+}
+.quiz-app .results{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 10px;
+}
+.quiz-app .results span{
+font-weight: bold;
+}
+.quiz-app .results span.bad{
+color:#dc0a0a 
+}
+.quiz-app .results span.good{
+color:#009688 ;
+}
+.quiz-app .results span.perfect{
+color: #0075ff;
+}
+
+
+/* CARDS */
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.CardContainer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+    height: 100%;
+    width: 100%;
+    background-color: #0e2136;
+  
+}
+.Card{
+    background-color: #142d4a;
+    width: 280px;
+    height: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 0;
+}
+.Card h2{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+ text-shadow: 0 0 8px rgba(0, 195, 255, 0.6);
+}
+.Card a{
+   background: linear-gradient(135deg, #00c3ff, #6300c6);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 22px;
+    border-radius: 6px;
+
+}
+.Card a:hover{
+    background: linear-gradient(135deg, #00c3ff, #6300c6);
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.5);
+    transform: translateY(-3px);
+}
+.Card::before{
+    content: "";
+    position: absolute;
+    background:conic-gradient(
+    from var(--deg) at center,
+     #00c3ff, #4d0199,#6300c6,#009dcd);
+    border-radius: 12px;
+    z-index: -2;
+    animation: autoRotate 2s linear infinite;
+    inset: -3px;
+}
+.Card::after{
+    content: "";
+    position: absolute;
+    background: #142d4a;    
+    /* filter: blur(5px); */
+    inset: 2px;
+    border-radius: 10px;
+    z-index: -1;
+}
+@property --deg{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+@keyframes autoRotate{
+    to{
+        --deg: 360deg;
+    }
+}

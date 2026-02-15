@@ -1,0 +1,305 @@
+[
+   
+    {
+        "question": "Who is making the Web standards?",
+        "options": [
+            "Mozilla",
+            "Microsoft",
+            "The World Wide Web Consortium",
+            "Google"
+        ],
+        "answer": "The World Wide Web Consortium"
+    },
+    {
+        "question": "Choose the correct HTML element for the largest heading:",
+        "options": [
+            "<heading>",
+            "<h6>",
+            "<head>",
+            "<h1>"
+        ],
+        "answer": "<h1>"
+    },
+    {
+        "question": "What is the correct HTML element for inserting a line break?",
+        "options": [
+            "<break>",
+            "lb",
+            "<br>",
+            "<b>"
+        ],
+        "answer": "<br>"
+    },
+    {
+        "question": "What is the correct HTML for adding a background color?",
+        "options": [
+            "<body bg='yellow'>",
+            "<background>yellow</background>",
+            "<body style='background-color:yellow;'>",
+            "<bg>yellow</bg>"
+        ],
+        "answer": "<body style='background-color:yellow;'>"
+    }
+   , {
+        "question": "Which HTML attribute is used to define inline styles?",
+        "options": [
+            "class",
+            "style",
+            "font",
+            "styles"
+        ],
+        "answer": "style"
+    },
+    {
+        "question": "Which is the correct HTML element for inserting an image?",
+        "options": [
+            "<img>",
+            "<image>",
+            "<pic>",
+            "<picture>"
+        ],
+        "answer": "<img>"
+    },
+    {
+        "question": "How can you make a numbered list?",
+        "options": [
+            "<ul>",
+            "<ol>",
+            "<dl>",
+            "<list>"
+        ],
+        "answer": "<ol>"
+    },
+    {
+        "question": "What is the correct HTML for making a text input field?",
+        "options": [
+            "<input type='text'>",
+            "<textfield>",
+            "<textinput type='text'>",
+            "<input text>"
+        ],
+        "answer": "<input type='text'>"
+    },
+    {
+        "question": "Which doctype is correct for HTML5?",
+        "options": [
+            "<!DOCTYPE html>",
+            "<!DOCTYPE HTML5>",
+            "<!DOCTYPE html5>",
+            "<!HTML TYPE html>"
+        ],
+        "answer": "<!DOCTYPE html>"
+    },
+    {
+        "question": "Which HTML element defines the title of a document?",
+        "options": [
+            "<meta>",
+            "<title>",
+            "<head>",
+            "<header>"
+        ],
+        "answer": "<title>"
+    },
+    {
+        "question": "What is the correct HTML for creating a hyperlink?",
+        "options": [
+            "<a href='url'>link text</a>",
+            "<a url='url'>link text</a>",
+            "<link href='url'>link text</link>",
+            "<a>url</a>"
+        ],
+        "answer": "<a href='url'>link text</a>"
+    },
+    {
+        "question": "Which HTML element is used to specify a footer for a document or section?",
+        "options": [
+            "<bottom>",
+            "<footer>",
+            "<section>",
+            "<foot>"
+        ],
+        "answer": "<footer>"
+    },
+    {
+        "question": "How can you open a link in a new tab/browser window?",
+        "options": [
+            "<a href='url' new>",
+            "<a href='url' target='_blank'>",
+            "<a href='url' target='new'>",
+            "<a href='url' window='_blank'>"
+        ],
+        "answer": "<a href='url' target='_blank'>"
+    },
+    {
+        "question": "Which HTML element is used to play video files?",
+        "options": [
+            "<media>",
+            "<movie>",
+            "<video>",
+            "<player>"
+        ],
+        "answer": "<video>"
+    },
+    {
+        "question": "Which tag is used to define a table row?",
+        "options": [
+            "<tr>",
+            "<td>",
+            "<th>",
+            "<row>"
+        ],
+        "answer": "<tr>"
+    },
+    {
+        "question": "Which HTML element is used for the main content of a document?",
+        "options": [
+            "<main>",
+            "<body>",
+            "<content>",
+            "<section>"
+        ],
+        "answer": "<main>"
+    },
+    {
+        "question": "What is the correct HTML for inserting a comment?",
+        "options": [
+            "<!-- This is a comment -->",
+            "// This is a comment",
+            "/* This is a comment */",
+            "<comment>This is a comment</comment>"
+        ],
+        "answer": "<!-- This is a comment -->"
+    },
+    {
+        "question": "Which HTML element is used to define important text?",
+        "options": [
+            "<important>",
+            "<b>",
+            "<strong>",
+            "<i>"
+        ],
+        "answer": "<strong>"
+    },
+   
+    {
+        "question": "Which HTML tag is used to define an unordered list?",
+        "options": [
+            "<ul>",
+            "<ol>",
+            "<li>",
+            "<list>"
+        ],
+        "answer": "<ul>"
+    },
+    {
+        "question": "Which HTML element is used to embed JavaScript code?",
+        "options": [
+            "<js>",
+            "<javascript>",
+            "<script>",
+            "<code>"
+        ],
+        "answer": "<script>"
+    },
+    {
+        "question": "What is the correct HTML element for inserting a horizontal rule?",
+        "options": [
+            "<hr>",
+            "<line>",
+            "<break>",
+            "<hline>"
+        ],
+        "answer": "<hr>"
+    },
+    {
+        "question": "Which HTML attribute is used to provide alternative text for an image?",
+        "options": [
+            "alt",
+            "title",
+            "src",
+            "longdesc"
+        ],
+        "answer": "alt"
+    },
+    {
+        "question": "Which HTML tag is used to define a table header?",
+        "options": [
+            "<th>",
+            "<thead>",
+            "<header>",
+            "<td>"
+        ],
+        "answer": "<th>"
+    },
+    {
+        "question": "Which HTML element is used to group block-elements to format them with CSS?",
+        "options": [
+            "<div>",
+            "<span>",
+            "<section>",
+            "<group>"
+        ],
+        "answer": "<div>"
+    },
+    {
+        "question": "Which HTML tag is used to define a list item?",
+        "options": [
+            "<li>",
+            "<ul>",
+            "<ol>",
+            "<item>"
+        ],
+        "answer": "<li>"
+    },
+    {
+        "question": "Which HTML element is used to define navigation links?",
+        "options": [
+            "<nav>",
+            "<navigation>",
+            "<links>",
+            "<menu>"
+        ],
+        "answer": "<nav>"
+    },
+    {
+        "question": "Which HTML tag is used to define a paragraph?",
+        "options": [
+            "<p>",
+            "<para>",
+            "<text>",
+            "<pg>"
+        ],
+        "answer": "<p>"
+    },
+    {
+        "question": "Which HTML element is used to define a section in a document?",
+        "options": [
+            "<section>",
+            "<div>",
+            "<article>",
+            "<span>"
+        ],
+        "answer": "<section>"
+    },
+    {
+        "question": "Which HTML tag is used to define a document's body?",
+        "options": [
+            "<body>",
+            "<main>",
+            "<content>",
+            "<section>"
+        ],
+        "answer": "<body>"
+    },
+    {
+        "question": "Which HTML element is used to define a clickable button?",
+        "options": [
+            "<button>",
+            "<btn>",
+            "<click>",
+            "<input type='button'>"
+        ],
+        "answer": "<button>"
+    }
+]
+   
