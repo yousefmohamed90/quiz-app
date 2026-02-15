@@ -1,7 +1,162 @@
 [
-    {
-        "question":""
-        ,"options":[""]
-        ,"answer":""}
-    
+  {
+    "question": "What does JS stand for?",
+    "options": ["JavaStyle", "JavaScript", "JustScript", "JScript"],
+    "answer": "JavaScript"
+  },
+  {
+    "question": "Which keyword is used to declare a variable in ES6?",
+    "options": ["var", "let", "define", "int"],
+    "answer": "let"
+  },
+  {
+    "question": "Which symbol is used for single-line comments?",
+    "options": ["//", "/* */", "#", "<!-- -->"],
+    "answer": "//"
+  },
+  {
+    "question": "Which method prints something to the browser console?",
+    "options": ["print()", "console.log()", "write()", "echo()"],
+    "answer": "console.log()"
+  },
+  {
+    "question": "What is the correct way to write an array?",
+    "options": ["var arr = (1,2,3)", "var arr = [1,2,3]", "var arr = {1,2,3}", "var arr = <1,2,3>"],
+    "answer": "var arr = [1,2,3]"
+  },
+  {
+    "question": "Which operator is used for strict equality?",
+    "options": ["==", "=", "===", "!="],
+    "answer": "==="
+  },
+  {
+    "question": "Which function converts JSON to a JavaScript object?",
+    "options": ["JSON.stringify()", "JSON.parse()", "JSON.convert()", "JSON.toObject()"],
+    "answer": "JSON.parse()"
+  },
+  {
+    "question": "Which method adds an element to the end of an array?",
+    "options": ["push()", "pop()", "shift()", "concat()"],
+    "answer": "push()"
+  },
+  {
+    "question": "What will typeof null return?",
+    "options": ["null", "object", "undefined", "number"],
+    "answer": "object"
+  },
+  {
+    "question": "Which loop runs at least once?",
+    "options": ["for", "while", "do...while", "forEach"],
+    "answer": "do...while"
+  },
+  {
+    "question": "Which keyword stops a loop?",
+    "options": ["stop", "exit", "break", "return"],
+    "answer": "break"
+  },
+  {
+    "question": "Which method removes the last element from an array?",
+    "options": ["pop()", "shift()", "splice()", "remove()"],
+    "answer": "pop()"
+  },
+  {
+    "question": "Which keyword is used to define a function?",
+    "options": ["func", "function", "define", "method"],
+    "answer": "function"
+  },
+  {
+    "question": "Which event occurs when a user clicks an HTML element?",
+    "options": ["onchange", "onmouse", "onclick", "onhover"],
+    "answer": "onclick"
+  },
+  {
+    "question": "What does DOM stand for?",
+    "options": ["Document Object Model", "Data Object Method", "Document Order Model", "Digital Ordinance Model"],
+    "answer": "Document Object Model"
+  },
+  {
+    "question": "Which method selects an element by ID?",
+    "options": ["getElementByClass()", "querySelector()", "getElementById()", "selectId()"],
+    "answer": "getElementById()"
+  },
+  {
+    "question": "Which array method creates a new array with transformed elements?",
+    "options": ["forEach()", "map()", "filter()", "reduce()"],
+    "answer": "map()"
+  },
+  {
+    "question": "Which keyword is used for asynchronous functions?",
+    "options": ["async", "await", "promise", "defer"],
+    "answer": "async"
+  },
+  {
+    "question": "Which method filters elements based on a condition?",
+    "options": ["map()", "filter()", "reduce()", "findAll()"],
+    "answer": "filter()"
+  },
+  {
+    "question": "What is a closure?",
+    "options": [
+      "A function with no return value",
+      "A function having access to its outer scope",
+      "A loop inside a function",
+      "A private variable"
+    ],
+    "answer": "A function having access to its outer scope"
+  },
+  {
+    "question": "What will '2' + 2 return?",
+    "options": ["4", "22", "NaN", "undefined"],
+    "answer": "22"
+  },
+  {
+    "question": "Which method merges two arrays?",
+    "options": ["push()", "concat()", "join()", "merge()"],
+    "answer": "concat()"
+  },
+  {
+    "question": "What does NaN stand for?",
+    "options": ["Not a Name", "New and Null", "Not a Number", "Negative Number"],
+    "answer": "Not a Number"
+  },
+  {
+    "question": "Which object handles asynchronous operations?",
+    "options": ["Promise", "Async", "Thread", "Callback"],
+    "answer": "Promise"
+  },
+  {
+    "question": "Which method converts a string to an integer?",
+    "options": ["parseInt()", "toString()", "Number()", "parseFloat()"],
+    "answer": "parseInt()"
+  },
+  {
+    "question": "Which keyword refers to the current object?",
+    "options": ["self", "this", "that", "current"],
+    "answer": "this"
+  },
+  {
+    "question": "What is the result of [] == false?",
+    "options": ["true", "false", "undefined", "error"],
+    "answer": "true"
+  },
+  {
+    "question": "Which method finds the first matching element in an array?",
+    "options": ["filter()", "find()", "search()", "match()"],
+    "answer": "find()"
+  },
+  {
+    "question": "What does event.preventDefault() do?",
+    "options": [
+      "Stops event bubbling",
+      "Stops default browser behavior",
+      "Stops JavaScript execution",
+      "Removes event listener"
+    ],
+    "answer": "Stops default browser behavior"
+  },
+  {
+    "question": "What is the output of typeof undefined?",
+    "options": ["null", "undefined", "object", "string"],
+    "answer": "undefined"
+  }
 ]
