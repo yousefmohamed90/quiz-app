@@ -11,9 +11,9 @@ let answersarea=document.querySelector(".answers-area");
 let submitbutton=document.querySelector(".submit");
 let results=document.querySelector(".results");
 let countdownelement=document.querySelector(".countdown");
+let filename;
 
-
-function getHTMLQuestions(){
+function getQuestions(filename){
 currentindex = 0;
 rightanswers = 0;
 bulletspanContainer.innerHTML = "";
@@ -51,95 +51,10 @@ myrequset.onreadystatechange=function(){
 
     }
  }
-myrequset.open("GET","htmlquestions.json",true);
+myrequset.open("GET",filename,true);
 myrequset.send();
 }
 
-
-
-function getCssQuestions(){
-currentindex = 0;
-rightanswers = 0;
-bulletspanContainer.innerHTML = "";
-quizarea.innerHTML = "";
-answersarea.innerHTML = "";
-results.innerHTML = "";
-let myrequset=new XMLHttpRequest();
-myrequset.onreadystatechange=function(){
-    if(this.readyState===4 && this.status===200){
-       let questionsobj=JSON.parse(this.responseText)  ;
-        let questioncount=questionsobj.length;
-        createBullets(questioncount);
-    //Add question data
-        addQuestionData(questionsobj[currentindex],questioncount);
-       
-       countdown(180,questioncount);
-
-            submitbutton.onclick=()=>{
-            let rightanswer=questionsobj[currentindex].answer;
-            currentindex++;
-            checkAnswer(rightanswer,questioncount);
-            //add next question
-            if(currentindex<questioncount){
-            quizarea.innerHTML="";
-            answersarea.innerHTML="";
-            addQuestionData(questionsobj[currentindex],questioncount);
-            //handle active bullet
-            handleBullets();
-            }
-            else{
-                clearInterval(countdowninterval);
-                showResults(questioncount);
-            }
-            }
-
-    }
- }
-myrequset.open("GET","cssquestion.json",true);
-myrequset.send();
-}
-
-function getJsQuestions(){
-currentindex = 0;
-rightanswers = 0;
-bulletspanContainer.innerHTML = "";
-quizarea.innerHTML = "";
-answersarea.innerHTML = "";
-results.innerHTML = "";
-let myrequset=new XMLHttpRequest();
-myrequset.onreadystatechange=function(){
-    if(this.readyState===4 && this.status===200){
-       let questionsobj=JSON.parse(this.responseText)  ;
-        let questioncount=questionsobj.length;
-        createBullets(questioncount);
-    //Add question data
-        addQuestionData(questionsobj[currentindex],questioncount);
-       
-       countdown(180,questioncount);
-
-            submitbutton.onclick=()=>{
-            let rightanswer=questionsobj[currentindex].answer;
-            currentindex++;
-            checkAnswer(rightanswer,questioncount);
-            //add next question
-            if(currentindex<questioncount){
-            quizarea.innerHTML="";
-            answersarea.innerHTML="";
-            addQuestionData(questionsobj[currentindex],questioncount);
-            //handle active bullet
-            handleBullets();
-            }
-            else{
-                clearInterval(countdowninterval);
-                showResults(questioncount);
-            }
-            }
-
-    }
- }
-myrequset.open("GET","jsquestions.json",true);
-myrequset.send();
-}
 
 function createBullets(num){
     countSpan.innerHTML=num;
