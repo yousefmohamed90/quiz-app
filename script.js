@@ -56,6 +56,35 @@ myrequset.send();
 }
 
 
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get("category");
+
+    if (!category) return; // stop if not quiz page
+
+    const categorySpan = document.querySelector(".category span");
+
+    if (category === "html") {
+        categorySpan.innerHTML = "HTML";
+        getQuestions("htmlquestions.json");
+    } 
+    else if (category === "css") {
+        categorySpan.innerHTML = "CSS";
+        getQuestions("cssquestion.json");
+    } 
+    else if (category === "js") {
+        categorySpan.innerHTML = "JavaScript";
+        getQuestions("jsquestions.json");
+    }
+
+});
+
+
+
+
+
 function createBullets(num){
     countSpan.innerHTML=num;
     //create spans
@@ -118,7 +147,6 @@ rightanswers++;
 function handleBullets(){
     let bulletspans=document.querySelectorAll(".bullets .spans span ");
     let arrayofspans=Array.from(bulletspans);
-    // if(currentindex>arrayofspans.length) return;
     arrayofspans.forEach((span,index)=>{
         if(currentindex===index){
         span.className="on";
